@@ -3,7 +3,7 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-## Milestone 1
+## Milestone 2
 
 ### What have you built?
 <ul>
@@ -18,4 +18,22 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ### Why have you used those?
 <ul>
     <li>The Random library will be useful in generating a random word from a finite list for the purpose of building this project initially. However this should be replaced with a wider approach.</li>
+</ul>
+
+
+## Milestone 3
+
+### What have you built?
+<ul>
+    <li>In this milestone I have developed from the previous a function to check whether an input guess is valid from the user, which subsequently calls another function to see whether the guess is within the randomly generated word</li>
+</ul>
+    
+### What technologies have you used?
+<ul>
+    <li>A good understanding of conditions and loops are required to continually request inputs from the user when there is an unexpected input</li>
+</ul>
+    
+### Why have you used those?
+<ul>
+    <li>These allow us to refine the code so that it can continualy check that the users input meets the required conditions before making a check.</li>
 </ul>
