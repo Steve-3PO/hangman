@@ -55,3 +55,12 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 <ul>
     <li>A Class with allow us to assign all functions and call them in a more susinct way, tying everything back to the Hangman Class. This will also allow users to create multiple instances of the game.</li>
 </ul>
+
+
+## Milestone 5
+
+### What have you built?
+<ul>
+    <li>The game has been polished and bugs have been ironed out. The game now runs smoothly allowing for further expansion on the list of words given or the mechanics of finding any word from a dictionary, not just from a finite list preprovided</li>
+</ul>
+    
