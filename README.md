@@ -35,5 +35,23 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
     
 ### Why have you used those?
 <ul>
-    <li>These allow us to refine the code so that it can continualy check that the users input meets the required conditions before making a check.</li>
+    <li>These allow us to refine the code so that it can continually check that the users input meets the required conditions before making a check.</li>
+</ul>
+
+
+## Milestone 4
+
+### What have you built?
+<ul>
+    <li>In milestone 4, appropriate actions are taken for when guesses are within the selected word or not. Reducing lives, updating the guessed_word string and appending to the bank of attempted letters</li>
+</ul>
+    
+### What technologies have you used?
+<ul>
+    <li>A Hangman Class has been utilised in this current milestone. </li>
+</ul>
+    
+### Why have you used those?
+<ul>
+    <li>A Class with allow us to assign all functions and call them in a more susinct way, tying everything back to the Hangman Class. This will also allow users to create multiple instances of the game.</li>
 </ul>
