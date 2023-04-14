@@ -103,23 +103,23 @@ Now we have the Hangman Class initialised we can move our functions into this, a
 Rather than simply printing out whether the user got the guess right or wrong, now we can make sure we modify the state of the instance to reflect this. When a guess is good, we iterate through the word and change our blank space to that letter, while remembering to reduce the ```num_letters``` (the set of letters unguessed) by 1.
 
 ```python
- def check_guess(self, choice):
-        choice = choice.lower()
-        if choice in self.word:
-            print(f"Good guess! {choice} is in the word.")
-            for i in range(len(self.word)):
-                if self.word[i] == choice:
-                    self.word_guessed[i] = choice
-            self.num_letters -= 1
+def check_guess(self, choice):
+    choice = choice.lower()
+    if choice in self.word:
+        print(f"Good guess! {choice} is in the word.")
+        for i in range(len(self.word)):
+            if self.word[i] == choice:
+                self.word_guessed[i] = choice
+        self.num_letters -= 1
 ```
 
 If the user does not guess correctly then we simply return the number of lives they have left, remembering to decrement ```num_lives``` by 1 here too. 
 
 ```python           
-        else:
-            self.num_lives -= 1
-            print(f"Sorry, {choice} is not in the word.")
-            print(f"You have {self.num_lives} lives left")
+    else:
+        self.num_lives -= 1
+        print(f"Sorry, {choice} is not in the word.")
+        print(f"You have {self.num_lives} lives left")
 ```
 
 Now that our functions are within our Hangman class, the ```ask_for_input()``` function also changes as now we want to check each guess that is valid and append the guess to the instance's list of guesses already made, regardless if it is correct or not.
@@ -136,13 +136,28 @@ def ask_for_input(self):
             self.check_guess(guess)
             self.list_of_guesses.append(guess) 
 ```
-            
-
 
 ## M4 - "Putting it all Together"
 
+To finish we just need a function that will create an instance and repeatedly run each function until either the user runs out of lives or the guess is made. 
 
+```python
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+    while True:
+        if game.num_lives == 0:
+            print("You lost!")
+            break
+        elif game.num_letters > 0:
+            print(game.word_guessed)
+            game.ask_for_input()
+        else:
+            print("Congratulations. You won the game!")
+            print(f"The word was {game.word}!")
+            break
+```
 
-
+Above we first define the number of lives and create the game instance passing in the lives as an argument. Then a while loop will continually run our conditions. Once ```num_lives``` is zero or that letters have all been guessed, we can return the corresponding win/loss output. However while neither of these are satisfied, we want to keep calling ```ask_for_input```.
 
 
