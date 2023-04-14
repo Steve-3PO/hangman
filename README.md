@@ -1,4 +1,58 @@
-# Hangman
+# Hangman (AiCore training)
+
+## Overview 
+> -  implement a Hangman game, where the computer thinks of a word and the user tries to guess it within a certain amount of attempts. 
+
+## Learning Objectives
+> - 
+
+
+
+## Project Structure
+
+### Milestone 1 - "Create the Variables for the Game"
+> - Define list of possible words
+> - Select a random word from list
+> - Ask user for input
+> - Validate user input
+
+### Milestone 2 - "Check if the Guessed Character is in the Word"
+> - Iteratively check for valid user input
+> - Check if guess in word
+> - Create functions to run checks
+
+### Milestone 3 - "Create the Game Class"
+> - Create the class
+> - Create methods for running checks
+> -  Define what happens if letter is/not in word
+
+### Milestone 4 - "Putting it all Together"
+> - Code the logic of the game
+
+## M1 - "Create the Variables for the Game"
+
+
+
+
+
+## M2 - "Check if the Guessed Character is in the Word"
+
+
+
+
+
+
+
+## M3 - "Create the Game Class"
+
+
+
+## M4 - "Putting it all Together"
+
+
+
+
+
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
