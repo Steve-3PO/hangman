@@ -4,6 +4,8 @@
 ## Overview 
 > - This is an implitation of the classic Hangman game, where the computer will generate a word and the user tries to guess it within a certain amount of attempts. 
 
+![hangman game](/images/hangman%201.png)
+
 ## Learning Objectives
 > - To utilise OOP principles to build the game
 > - To implement good python practise and coding
@@ -122,6 +124,8 @@ If the user does not guess correctly then we simply return the number of lives t
         print(f"You have {self.num_lives} lives left")
 ```
 
+![life lost image](/images/hangman%203.png)
+
 Now that our functions are within our Hangman class, the ```ask_for_input()``` function also changes as now we want to check each guess that is valid and append the guess to the instance's list of guesses already made, regardless if it is correct or not.
 
 ```python
@@ -159,5 +163,7 @@ def play_game(word_list):
 ```
 
 Above we first define the number of lives and create the game instance passing in the lives as an argument. Then a while loop will continually run our conditions. Once ```num_lives``` is zero or that letters have all been guessed, we can return the corresponding win/loss output. However while neither of these are satisfied, we want to keep calling ```ask_for_input```.
+
+![game won](/images/hangman%204.png)
 
 
